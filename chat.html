@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://kit.fontawesome.com/80c6e12b8f.js"
+        crossorigin="anonymous">
+    </script>
+    <title>Settings | Kakao Clone</title>
+    <style>
+        .g-avatar{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__clock">
+                <i class="far fa-clock"></i>
+            </span>
+        </div>
+        <div class="status-bar__column"></div>
+    </div>
+
+    <header>
+        <div class="header">
+            <div class="header__header-column">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left fa-2x"></i>
+                </a>
+                <h1 class="header__chat-room-name">
+                    Someone
+                </h1>
+            </div>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="header__icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="chat">
+        <ul class="chat__messages">
+            <span class="chat__timestamp">
+                Thursday, July 16, 2020
+            </span>
+
+            <li class="incoming-message message">
+                <img src="images/profile.png" class="g-avatar message-avatar">
+                <div class="message__contents">
+                    <span class="message__author">
+                        Someone
+                    </span>
+                    <div class="message__bubble">
+                        Hello!
+                    </div>
+                </div>
+                <span class="message__timestamp"></span>
+            </li>
+
+            <li class="incoming-message message">
+                <span class="message__timestamp"></span>
+                <div class="message__contents">
+                    <div class="message__bubble">
+                        Yeah how r u?
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </main>
+
+    <div class="chat__write">
+        <div class="chat__write-column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__write-column">
+            <input
+                type="text"
+                placeholder="Send message"
+                class="chat__write-input">
+        </div>
+        <div class="chat__write-column">
+            <div class="chat__write-icon">
+                <i class="far fa-smile-wink"></i>
+            </div>
+            <div class="chat__write-icon">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
