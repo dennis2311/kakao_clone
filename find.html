@@ -7,29 +7,30 @@
         src="https://kit.fontawesome.com/80c6e12b8f.js"
         crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Find | Kakao Clone</title>
-    <style>
-        .g-avatar{
-            height: 150px;
-            width: 150px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">
-                <i class="far fa-clock"></i>
+                13:54
             </span>
         </div>
-        <div class="status-bar__column"></div>
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
 
     <header>
         <div class="header">
             <div class="header__header-column">
-                <h1 class="class">Find</h1>
+                <h1 class="header__title">Find</h1>
             </div>
             <div class="header__header-column">
                 <span class="header__icon">
@@ -126,6 +127,10 @@
             </li>
         </ul>
     </nav>
-
+    <div class="alertScreen">
+        <span class="alertScreen__text">
+            For better user-experience, please adjust your window size.
+        </span>
+    </div>
 </body>
 </html>

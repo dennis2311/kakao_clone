@@ -1,0 +1,14 @@
+.friends .friends__header{
+    padding-bottom: 20px;
+    border-bottom:1px solid #f7f7f7;
+}
+
+.friends .friends__list{
+    margin-top: 20px;
+}
+
+.friends .friends__number{
+    opacity: 0.6;
+    font-size: 12px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,65 @@
+.more .friend__name{
+    font-size: 18px;
+}
+
+.more .friend__email{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.more .more__btn-list{
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.more__btn-list .more__btn{
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more__btn .more__btn-title{
+    margin-top: 12px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.more .more__suggestions{
+    margin-top: 30px;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 20px;
+}
+
+.more .more__suggestion-column{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.more .suggestion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:40px;
+    cursor: pointer;
+}
+
+.suggestion .suggestion__icon{
+    color: white;
+    background-color: #fce006;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.suggestion .suggestion__title{
+    margin-top: 12px;
+    font-size: 13px;
+    opacity: 0.8;
+}

@@ -7,29 +7,29 @@
         src="https://kit.fontawesome.com/80c6e12b8f.js"
         crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Friends | Kakao Clone</title>
-    <style>
-        .g-avatar{
-            height: 150px;
-            width: 150px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">
-                <i class="far fa-clock"></i>
+                13:54
             </span>
         </div>
-        <div class="status-bar__column"></div>
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
-
     <header>
         <div class="header">
             <div class="header__header-column">
-                <h1 class="class">Friends</h1>
+                <h1 class="header__title">Friends</h1>
             </div>
             <div class="header__header-column">
                 <span class="header__icon">
@@ -45,22 +45,24 @@
     <main class="friends">
         <header class="friends__header">
             <div class="friends__friend friend">
-                <img src="images/profile.png" class="g-avatar friend--self">
-                <div class="friend__content">
-                    <span class="friend__name">
-                        Dennis
-                    </span>
-                    <span class="friend__status">
-                        for useful vacations
-                    </span>
+                <div class="friend__column">
+                    <img src="images/profile.png" class="g-avatar friend--self">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            Dennis
+                        </span>
+                        <span class="friend__status">
+                            for useful vacations
+                        </span>
+                    </div>
                 </div>
             </div>
         </header>
 
         <ul class="friends__list list">
-            <h5 class="friends__title">Friends 100</h5>
+            <h5 class="friends__number">Friends 100</h5>
             <li class="friends__friend friend">
-                <div class="friends__column">
+                <div class="friend__column">
                     <img src="images/profile.png" class="g-avatar friend__avatar">
                     <div class="friend__content">
                         <span class="friend__name">
@@ -71,9 +73,9 @@
                         </span>
                     </div>
                 </div>
-                <div class="friends__column">
+                <div class="friend__column">
                     <div class="friend__now-listening">
-                        <span class="friend__now-listening">
+                        <span class="friend__music-title">
                             FairyTale - DR&IU
                         </span>
                         <i class="fas fa-play"></i>
@@ -109,6 +111,10 @@
             </li>
         </ul>
     </nav>
-
+    <div class="alertScreen">
+        <span class="alertScreen__text">
+            For better user-experience, please adjust your window size.
+        </span>
+    </div>
 </body>
 </html>

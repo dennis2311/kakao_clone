@@ -7,30 +7,31 @@
         src="https://kit.fontawesome.com/80c6e12b8f.js"
         crossorigin="anonymous">
     </script>
-    <title>Settings | Kakao Clone</title>
-    <style>
-        .g-avatar{
-            height: 150px;
-            width: 150px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>ChatRoom | Kakao Clone</title>
 </head>
 
-<body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span class="status-bar__clock">
-                <i class="far fa-clock"></i>
-            </span>
+<body class="chat-body">
+    <div class="header-wrapper">
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span class="status-bar__clock">
+                    13:54
+                </span>
+            </div>
+            <div class="status-bar__column">
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span class="status-bar__battery-level">100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
         </div>
-        <div class="status-bar__column"></div>
-    </div>
 
-    <header>
-        <div class="header">
+        <header class="header">
             <div class="header__header-column">
-                <a href="index.html">
-                    <i class="fas fa-arrow-left fa-2x"></i>
+                <a href="index.html" class="header__back-btn">
+                    <i class="fas fa-arrow-left"></i>
                 </a>
                 <h1 class="header__chat-room-name">
                     Someone
@@ -44,8 +45,8 @@
                     <i class="fas fa-bars"></i>
                 </span>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
 
     <main class="chat">
         <ul class="chat__messages">
@@ -59,44 +60,44 @@
                     <span class="message__author">
                         Someone
                     </span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Hello!
-                    </div>
+                    </span>
                 </div>
-                <span class="message__timestamp"></span>
             </li>
 
-            <li class="incoming-message message">
-                <span class="message__timestamp"></span>
+            <li class="outgoing-message message">
                 <div class="message__contents">
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Yeah how r u?
-                    </div>
+                    </span>
                 </div>
-
             </li>
         </ul>
     </main>
 
-    <div class="chat__write">
-        <div class="chat__write-column">
-            <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-            <input
-                type="text"
-                placeholder="Send message"
-                class="chat__write-input">
-        </div>
-        <div class="chat__write-column">
-            <div class="chat__write-icon">
-                <i class="far fa-smile-wink"></i>
+    <div class="chat__write-container">
+        <input
+            class="chat__write"
+            type="text"
+            placeholder="Send message"
+            class="chat__write-input">
+        <div class="chat__icon chat__icon-left">
+            <div class="chat__icon">
+                <i class="far fa-plus-square"></i>
             </div>
-            <div class="chat__write-icon">
+        </div>
+        <div class="chat__icon chat__icon-right">
+            <div class="chat__icon">
+                <i class="far fa-smile-wink"></i>
                 <i class="fas fa-play"></i>
             </div>
         </div>
     </div>
-
+    <div class="alertScreen">
+        <span class="alertScreen__text">
+            For better user-experience, please adjust your window size.
+        </span>
+    </div>
 </body>
 </html>
